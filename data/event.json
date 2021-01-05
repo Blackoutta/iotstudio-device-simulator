@@ -1,0 +1,12 @@
+{
+    "id": "%v",
+    "version": "1.0",
+    "params": {
+        "infoEvent": {
+            "value": {
+                "someFloat64": 66.66
+            },
+            "time": %[2]v
+        }
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "id": "%v",
+    "version": "1.0",
+    "params": [
+        "someInt32",
+        "someInt64",
+        "someString",
+        "someFloat32",
+        "someFloat64",
+        "someStruct",
+        "someBool",
+        "someEnum",
+        "someBitmap"
+    ]
+}

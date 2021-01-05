@@ -1,0 +1,256 @@
+{
+    "events": [
+        {
+            "desc": null,
+            "eventType": "error",
+            "functionMode": "event",
+            "functionType": "u",
+            "identifier": "fatalEvent",
+            "name": "fatalEvent",
+            "outputData": [
+                {
+                    "dataType": {
+                        "specs": {
+                            "0": "fatal1",
+                            "1": "fatal2",
+                            "3": "fatal3"
+                        },
+                        "type": "enum"
+                    },
+                    "identifier": "someEnum",
+                    "name": "someEnum"
+                }
+            ]
+        },
+        {
+            "desc": null,
+            "eventType": "info",
+            "functionMode": "event",
+            "functionType": "u",
+            "identifier": "infoEvent",
+            "name": "infoEvent",
+            "outputData": [
+                {
+                    "dataType": {
+                        "specs": {
+                            "max": "999",
+                            "min": "-999",
+                            "step": "0.01",
+                            "unit": "牛顿每库仑 / N/C"
+                        },
+                        "type": "double"
+                    },
+                    "identifier": "someFloat64",
+                    "name": "someFloat64"
+                }
+            ]
+        },
+        {
+            "desc": null,
+            "eventType": "alert",
+            "functionMode": "event",
+            "functionType": "u",
+            "identifier": "warningEvent",
+            "name": "warningEvent",
+            "outputData": [
+                {
+                    "dataType": {
+                        "specs": {
+                            "define": [
+                                {
+                                    "0": "fan_off",
+                                    "1": "fan_on",
+                                    "bit": 0
+                                },
+                                {
+                                    "0": "led_off",
+                                    "1": "led_on",
+                                    "bit": 1
+                                }
+                            ],
+                            "length": 2
+                        },
+                        "type": "bitMap"
+                    },
+                    "identifier": "someBitmap",
+                    "name": "someBitmap"
+                }
+            ]
+        }
+    ],
+    "properties": [
+        {
+            "accessMode": "rw",
+            "dataType": {
+                "specs": {
+                    "define": [
+                        {
+                            "0": "fan_on",
+                            "1": "fan_off",
+                            "bit": 0
+                        },
+                        {
+                            "0": "compress_on",
+                            "1": "compress_off",
+                            "bit": 1
+                        }
+                    ],
+                    "length": 2
+                },
+                "type": "bitMap"
+            },
+            "desc": null,
+            "functionMode": "property",
+            "functionType": "u",
+            "identifier": "someBitmap",
+            "name": "someBitmap"
+        },
+        {
+            "accessMode": "rw",
+            "dataType": {
+                "specs": {
+                    "false": "关",
+                    "true": "开"
+                },
+                "type": "bool"
+            },
+            "desc": null,
+            "functionMode": "property",
+            "functionType": "u",
+            "identifier": "someBool",
+            "name": "someBool"
+        },
+        {
+            "accessMode": "rw",
+            "dataType": {
+                "specs": {
+                    "0": "on",
+                    "1": "off"
+                },
+                "type": "enum"
+            },
+            "desc": null,
+            "functionMode": "property",
+            "functionType": "u",
+            "identifier": "someEnum",
+            "name": "someEnum"
+        },
+        {
+            "accessMode": "rw",
+            "dataType": {
+                "specs": {
+                    "max": "9999",
+                    "min": "-9999",
+                    "step": "0.000001",
+                    "unit": "微西每厘米 / uS/cm"
+                },
+                "type": "float"
+            },
+            "desc": null,
+            "functionMode": "property",
+            "functionType": "u",
+            "identifier": "someFloat32",
+            "name": "someFloat32"
+        },
+        {
+            "accessMode": "rw",
+            "dataType": {
+                "specs": {
+                    "max": "9223372036854775807.999999",
+                    "min": "-999999.999999",
+                    "step": "0.000001"
+                },
+                "type": "double"
+            },
+            "desc": null,
+            "functionMode": "property",
+            "functionType": "u",
+            "identifier": "someFloat64",
+            "name": "someFloat64"
+        },
+        {
+            "accessMode": "rw",
+            "dataType": {
+                "specs": {
+                    "max": "2147483647",
+                    "min": "-2147483648",
+                    "step": "1",
+                    "unit": "牛顿每库仑 / N/C"
+                },
+                "type": "int32"
+            },
+            "desc": null,
+            "functionMode": "property",
+            "functionType": "u",
+            "identifier": "someInt32",
+            "name": "someInt32"
+        },
+        {
+            "accessMode": "rw",
+            "dataType": {
+                "specs": {
+                    "max": "9223372036854775807",
+                    "min": "-9223372036854775808",
+                    "step": "1",
+                    "unit": "伏特每米 / V/m"
+                },
+                "type": "int64"
+            },
+            "desc": null,
+            "functionMode": "property",
+            "functionType": "u",
+            "identifier": "someInt64",
+            "name": "someInt64"
+        },
+        {
+            "accessMode": "rw",
+            "dataType": {
+                "specs": {
+                    "length": "256"
+                },
+                "type": "string"
+            },
+            "desc": null,
+            "functionMode": "property",
+            "functionType": "u",
+            "identifier": "someString",
+            "name": "someString"
+        },
+        {
+            "accessMode": "rw",
+            "dataType": {
+                "specs": [
+                    {
+                        "dataType": {
+                            "specs": {
+                                "max": "99",
+                                "min": "-99",
+                                "step": "1",
+                                "unit": "微西每厘米 / uS/cm"
+                            },
+                            "type": "int32"
+                        },
+                        "identifier": "field1",
+                        "name": "field1"
+                    },
+                    {
+                        "dataType": {
+                            "specs": {
+                                "length": "256"
+                            },
+                            "type": "string"
+                        },
+                        "identifier": "field2",
+                        "name": "field2"
+                    }
+                ],
+                "type": "struct"
+            },
+            "desc": null,
+            "functionMode": "property",
+            "functionType": "u",
+            "identifier": "someStruct",
+            "name": "someStruct"
+        }
+    ]
+}

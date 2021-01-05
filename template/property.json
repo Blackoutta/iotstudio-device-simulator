@@ -1,0 +1,45 @@
+{
+    "id": "%v",
+    "version": "1.0",
+    "params": {
+        "someStruct": {
+            "value": {
+                "field1": 66,
+                "field2": "this is a string"
+            },
+            "time": %[2]v
+        },
+        "someBitmap": {
+            "value": 2,
+            "time": %[2]v
+        },
+        "someBool": {
+            "value": true,
+            "time": %[2]v
+        },
+        "someEnum": {
+            "value": 0,
+            "time": %[2]v
+        },
+        "someInt32": {
+            "value": 666666,
+            "time": %[2]v
+        },
+        "someInt64": {
+            "value": 77777777,
+            "time": %[2]v
+        },
+        "someString": {
+            "value": "this is a string",
+            "time": %[2]v
+        },
+        "someFloat32": {
+            "value": 23.3,
+            "time": %[2]v
+        },
+        "someFloat64": {
+            "value": 66.666,
+            "time": %[2]v
+        }
+    }
+}

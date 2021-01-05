@@ -1,0 +1,8 @@
+{
+    "id": "%v",
+    "version": "1.0",
+    "params": {
+        "someInt64": {
+        }
+    }
+}
