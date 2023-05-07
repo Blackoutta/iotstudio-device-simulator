@@ -5,7 +5,7 @@ import (
 	"os"
 	"strings"
 
-	"code.iot.chinamobile.com/huyangyi/onenetstudio-coap-client/simulator"
+	"code.iot.chinamobile.com/huyangyi/studio-coap-client/simulator"
 	MQTT "github.com/eclipse/paho.mqtt.golang"
 )
 

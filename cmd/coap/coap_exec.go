@@ -11,18 +11,18 @@ import (
 	"syscall"
 	"time"
 
-	"code.iot.chinamobile.com/huyangyi/onenetstudio-coap-client/simulator"
+	"code.iot.chinamobile.com/huyangyi/studio-coap-client/simulator"
 	"github.com/dustin/go-coap"
 	"github.com/sirupsen/logrus"
 )
 
 // flags
 var (
-	serverHost = flag.String("host", "10.12.31.100", "OneNET Studio Coap接入机地址")
-	serverPort = flag.Int("port", 5683, "OneNET Studio Coap接入机端口")
-	productID  = flag.String("pid", "H445PYs3Gm", "设备的ProductID，可在设备详情页找到")
-	deviceKey  = flag.String("dk", "n9VryY2R78mB+euzd5cx9/Xrr7mlF6En0yGX5xWDJz8=", "设备密钥，可在设备详情页找到")
-	deviceName = flag.String("dn", "coap_d_1", "设备名称，可在设备详情页找到")
+	serverHost = flag.String("host", "", "Studio Coap接入机地址")
+	serverPort = flag.Int("port", 0, "Studio Coap接入机端口")
+	productID  = flag.String("pid", "", "设备的ProductID，可在设备详情页找到")
+	deviceKey  = flag.String("dk", "", "设备密钥，可在设备详情页找到")
+	deviceName = flag.String("dn", "", "设备名称，可在设备详情页找到")
 	logLevel   = flag.String("l", "info", "日志等级，可选项：debug, info, error. debug能看到设备发送的json payload信息, 比较占空间，故默认设置为info")
 	connFile   = flag.String("cf", "", "除了使用flag来指定连接信息外，设备也可以使用配置文件的方式来进行连接。")
 )

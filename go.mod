@@ -1,4 +1,4 @@
-module code.iot.chinamobile.com/huyangyi/onenetstudio-coap-client
+module code.iot.chinamobile.com/huyangyi/studio-coap-client
 
 go 1.14
 

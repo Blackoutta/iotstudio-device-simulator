@@ -10,16 +10,16 @@ import (
 	"syscall"
 	"time"
 
-	"code.iot.chinamobile.com/huyangyi/onenetstudio-coap-client/simulator"
+	"code.iot.chinamobile.com/huyangyi/studio-coap-client/simulator"
 	"github.com/sirupsen/logrus"
 )
 
 var (
-	serverHost = flag.String("host", "10.12.31.5", "OneNET Studio MQTT接入机地址")
-	serverPort = flag.Int("port", 1883, "OneNET Studio MQTT接入机端口")
-	productID  = flag.String("pid", "BV4BxD5f9K", "设备的ProductID，可在设备详情页找到")
-	deviceKey  = flag.String("dk", "T+HfLbOB209zsf/Hn20xPbXRExGnGyWLNZl5bY9/MVs=", "设备密钥，可在设备详情页找到")
-	deviceName = flag.String("dn", "mqtt_d_1", "设备名称，可在设备详情页找到")
+	serverHost = flag.String("host", "", " Studio MQTT接入机地址")
+	serverPort = flag.Int("port", 0, " Studio MQTT接入机端口")
+	productID  = flag.String("pid", "", "设备的ProductID，可在设备详情页找到")
+	deviceKey  = flag.String("dk", "", "设备密钥，可在设备详情页找到")
+	deviceName = flag.String("dn", "", "设备名称，可在设备详情页找到")
 	logLevel   = flag.String("l", "info", "日志等级，可选项：debug, info, error. debug能看到设备发送的json payload信息, 比较占空间，故默认设置为info")
 	qos        = flag.Uint("qos", 1, "MQTT设备上行QOS，支持0, 1")
 	retained   = flag.Bool("retained", false, "MQTT设备上行的retained属性, 接入机只支持0(false)")
